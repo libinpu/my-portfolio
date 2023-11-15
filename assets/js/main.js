@@ -13,6 +13,18 @@
     }
   }
 
+    // Function to toggle between light and dark themes
+    function toggleTheme() {
+        const body = document.body;
+        body.classList.toggle("bg-light");
+        body.classList.toggle("bg-dark");
+        body.classList.toggle("text-dark");
+        body.classList.toggle("text-white");
+    }
+
+
+  
+
   /**
    * Easy event listener function
    */
