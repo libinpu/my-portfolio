@@ -13,6 +13,42 @@ h5,
 h6 {
   color: #1e1e1e;
 }
+.spotlight {
+  z-index: 999;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #2696e8,0 0 60px #2696e8,0 0 100px #2696e8;
+  pointer-events: none;
+  background: #2696e8;
+  animation: colors 2s infinite;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+@keyframes colors{
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
+
+.spotlight::before{
+  content: '';
+  position: absolute;
+  background: #2696e8;
+  height: 50px;
+  width: 50px;
+  opacity: 0.2;
+  transform: translate(-30%, -30%);
+  border-radius: 50%;
+}
+
+
+
+
 
 a {
   color: #1e1e1e;
